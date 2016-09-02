@@ -1,5 +1,5 @@
 {
-  "name": "reactsite",
+  "name": "react-playground",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -44,13 +44,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathanjames86/reactSite.git"
+    "url": "git+https://github.com/your+repository"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jonathanjames86/reactSite/issues"
-  },
+  ,
   "keywords": [
     "react",
     "tutorial",
@@ -58,6 +56,5 @@
     "example",
     "redux",
     "sample-app"
-  ],
-  "homepage": "https://github.com/jonathanjames86/reactSite#readme"
+  ]
 }
