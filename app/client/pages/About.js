@@ -2,18 +2,18 @@ import React from "react";
 import { Link } from "react-router";
 
 import ShowList from './AboutChild';
-import AddFriend from './AddFriend';
+import AddMessage from './AddFriend';
 
 var About = React.createClass({
   getInitialState: function(){
     return {
       username: 'JamesPutnam',
-      friends: ['mike', 'brandon', 'issac', 'liam']
+      message: ['hey', 'Whats Up', 'just chillin', 'fake data']
     }
   },
-  addFriend: function(friend){
+  addMessage: function(message){
     this.setState({
-      friends: this.state.friends.concat([friend])
+      message: this.state.message.concat([message])
     });
   },
   handleChange: function(e){
@@ -25,8 +25,8 @@ var About = React.createClass({
     return (
       <div>
         <h2>{this.state.username}</h2>
-        <AddFriend addNew={this.addFriend} />
-        <ShowList names={this.state.friends} />
+        <AddMessage addNew={this.addMessage} />
+        <ShowList names={this.state.message} />
 
       </div>
     )

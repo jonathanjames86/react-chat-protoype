@@ -1,33 +1,33 @@
 import React from 'react';
 
 
-var AddFriend = React.createClass({
+var AddMessage = React.createClass({
   getInitialState: function(){
     return {
-      newFriend: ''
+      newMessage: ''
     }
   },
-  updateNewFriend: function(e) {
+  updateMessage: function(e) {
     this.setState({
-      newFriend: e.target.value
+      newMessage: e.target.value
     });
   },
   handleAddNew: function(){
-    this.props.addNew(this.state.newFriend);
+    this.props.addNew(this.state.newMessage);
     this.setState({
-      newFriend: ''
+      newMessage: ''
     });
   },
   render(){
     return(
       <div>
-        <input type='text' value={this.state.newFriend}
-         onChange={this.updateNewFriend} />
-         <button onClick={this.handleAddNew}>Add Friend</button>
+        <input type='text' value={this.state.newMessage}
+         onChange={this.updateMessage} />
+       <button onClick={this.handleAddNew}>+ Message</button>
       </div>
     )
   }
 })
 
 
-export default AddFriend;
+export default AddMessage;
