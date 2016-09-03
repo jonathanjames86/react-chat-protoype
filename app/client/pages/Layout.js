@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
 
           <Link to='home'>Home</Link>
           <Link to='about'>About</Link>
-          <Link to='settings'>Settings</Link>
+          <Link to='settings'>Settings are the best</Link>
 
             {this.props.children}
 
